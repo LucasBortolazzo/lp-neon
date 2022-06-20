@@ -129,7 +129,6 @@
 
     .text {
       @include flex(column, center, center);
-      gap: 3.1rem;
 
       .info-txt {
         @include flex(column, center, center);
@@ -138,6 +137,7 @@
           font-family: 'Poppins';
           text-align: center;
           color: $gray-600;
+          margin-top: 3.6rem;
         }
 
         p {
@@ -150,10 +150,28 @@
           margin-bottom: 2.6rem;
         }
 
-        img {
-          &:first-child {
-            margin-bottom: 1.3rem;
+        ul {
+          li {
+            &:not(:last-child) {
+              margin-bottom: 1.3rem;
+            }
           }
+        }
+      }
+
+      .icon {
+        position: relative;
+
+        &:before {
+          content: '';
+          width: 0.5rem;
+          height: 8.3rem;
+          background: url('../img/points.svg') center center;
+          display: inline-block;
+          position: absolute;
+          top: -10.4rem;
+          left: 50%;
+          margin-left: -0.25rem;
         }
       }
     }
