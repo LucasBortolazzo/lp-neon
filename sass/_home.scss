@@ -100,3 +100,62 @@
     }
   }
 }
+
+.s-card-neon {
+  padding-top: 12.9rem;
+
+  .left-area {
+    width: 100%;
+    max-width: 27.7rem;
+
+    .ilustra-mockup {
+      position: relative;
+      width: 100%;
+      max-width: 27.7rem;
+      margin-bottom: 12.9rem;
+
+      .circle {
+        position: absolute;
+        left: -21.4rem;
+        top: 8.7rem;
+        z-index: -1;
+        max-width: 37.7rem;
+      }
+
+      .mockup {
+        z-index: 2;
+      }
+    }
+
+    .text {
+      @include flex(column, center, center);
+      gap: 3.1rem;
+
+      .info-txt {
+        @include flex(column, center, center);
+
+        h3 {
+          font-family: 'Poppins';
+          text-align: center;
+          color: $gray-600;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 150%;
+          text-align: center;
+          color: $gray-400;
+          opacity: 0.8;
+          margin-bottom: 2.6rem;
+        }
+
+        img {
+          &:first-child {
+            margin-bottom: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
