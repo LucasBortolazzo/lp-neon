@@ -184,9 +184,9 @@
   .right-area {
     width: 100%;
     max-width: 80rem;
-    margin-bottom: 14.4rem;
 
     .main-text {
+      margin-bottom: 14.4rem;
       h2 {
         font-weight: 700;
         color: $gray-600;
@@ -246,6 +246,67 @@
           background-color: $brand-yellow;
           display: inline-block;
         }
+      }
+    }
+
+    .box-card {
+      height: 41rem;
+      width: 100%;
+      background: url('../img/bg-box-card-neon.svg') center center no-repeat;
+      border-radius: 1.2rem;
+      @include flex(row, center, space-between);
+      padding-left: 5.9rem;
+
+      .text {
+        width: 100%;
+        max-width: 38rem;
+        h2 {
+          font-family: 'Poppins';
+          color: #ffffff;
+          margin-bottom: 1.1rem;
+        }
+
+        h3 {
+          font-family: 'Poppins';
+          line-height: 150%;
+          max-width: 32.7rem;
+          color: #ffffff;
+          margin-bottom: 0.8rem;
+        }
+
+        p {
+          max-width: 32.7rem;
+          font-family: 'Inter';
+          font-size: 1.6rem;
+          line-height: 150%;
+          color: #ffffff;
+          margin-bottom: 0.7rem;
+        }
+
+        .btns {
+          @include flex(row, center, flex-start);
+          gap: 1.6rem;
+        }
+      }
+
+      .image {
+        margin-right: -3.1rem;
+      }
+    }
+  }
+}
+
+.s-depoimentos {
+  padding-top: 13.4rem;
+
+  .top {
+    margin-bottom: 4rem;
+    h2 {
+      span {
+        display: block;
+        font-family: 'Poppins';
+        color: $gray-200;
+        margin-bottom: 1.4rem;
       }
     }
   }
