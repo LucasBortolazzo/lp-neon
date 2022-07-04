@@ -298,7 +298,6 @@
 
 .s-depoimentos {
   padding-top: 13.4rem;
-  margin-bottom: 24rem;
 
   .top {
     @include flex(row, flex-end, space-between);
@@ -339,5 +338,92 @@
 
   .slide-depoimentos {
     overflow: hidden;
+  }
+}
+
+.s-conta-digital {
+  padding-top: 12.7rem;
+  padding-bottom: 8.5rem;
+
+  .container {
+    @include flex(row, center, space-between);
+
+    .text {
+      width: 100%;
+      max-width: 54.2rem;
+
+      h2 {
+        color: $gray-600;
+        margin-bottom: 4.5rem;
+        span {
+          display: block;
+          font-family: 'Poppins';
+          font-weight: 600;
+          font-size: 4rem;
+          line-height: 112%;
+          letter-spacing: -1px;
+          color: rgba(198, 197, 206, 0.8);
+          margin-bottom: 0.9rem;
+        }
+      }
+
+      ul {
+        margin-bottom: 6.1rem;
+        li {
+          @include flex(row, center, flex-start);
+          gap: 2.6rem;
+          margin-bottom: 4.5rem;
+
+          .icon {
+            width: 4.5rem;
+            height: 4.5rem;
+            background: #00d7d7;
+            border-radius: 0.8rem;
+            @include flex(row, center, center);
+          }
+
+          .info {
+            h4 {
+              color: $gray-400;
+              margin-bottom: 0.4rem;
+            }
+
+            p {
+              font-size: 1.8rem;
+              line-height: 150%;
+              color: $gray-300;
+            }
+          }
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      width: 100%;
+      max-width: 71.2rem;
+      height: 59.8rem;
+      margin-right: -38px;
+      left: 125px;
+
+      img {
+        position: absolute;
+
+        &.mocukup-01 {
+          left: 0;
+          bottom: 4.7rem;
+        }
+
+        &.mockup-02 {
+          left: 25.8rem;
+          top: 0.3rem;
+        }
+
+        &.circle {
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
   }
 }
