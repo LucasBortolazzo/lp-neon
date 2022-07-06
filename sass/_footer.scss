@@ -1,7 +1,6 @@
 footer {
   background: $brand-blue;
   padding-top: 4.9rem;
-  padding-bottom: 3.8rem;
   margin-top: 8.5rem;
 
   .top {
@@ -33,8 +32,9 @@ footer {
 
   main {
     @include flex(row, flex-start, space-between);
-    padding-bottom: 5.7rem;
+    padding-bottom: 6.2rem;
     border-bottom: 2px solid rgba(73, 196, 253, 0.2);
+    margin-bottom: 3.9rem;
     gap: 7.4rem;
 
     nav {
@@ -56,7 +56,9 @@ footer {
 
         ul {
           li {
-            margin-bottom: 2.9rem;
+            &:not(:last-child) {
+              margin-bottom: 2.9rem;
+            }
             a {
               font-size: 1.4rem;
               line-height: 1.7rem;
@@ -69,33 +71,46 @@ footer {
     }
 
     .btns {
+      width: 100%;
+      max-width: 28rem;
       button {
-        @include flex(row, center, flex-start);
-        gap: 2.4rem;
         width: 100%;
         height: 7.6rem;
-        max-width: 28rem;
-        padding: 1rem;
         background: rgba(0, 164, 240, 0.23);
         border-radius: 6px;
-        margin-bottom: 2.4rem;
+        @include flex(row, center, flex-start);
+        gap: 2.4rem;
+        padding-left: 2.5rem;
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+        }
         color: #ffffff;
 
-        strong {
-          line-height: 150%;
-          font-size: 1.4rem;
+        .info {
+          strong {
+            line-height: 150%;
+            font-size: 1.4rem;
+            text-align: left;
+            display: block;
+          }
+
+          span {
+            display: block;
+            font-size: 1.4rem;
+            line-height: 150%;
+          }
         }
       }
     }
   }
 
-  .info-bottom {
-    padding-top: 3.5rem;
+  .mensagem {
     @include flex(row, flex-start, flex-start);
     gap: 2.5rem;
-    border-bottom: 4px solid #ffc800;
+    padding-bottom: 3.4rem;
+    border-bottom: 4px solid $brand-yellow;
 
-    icon {
+    .icon {
       font-size: 1.8rem;
     }
 
