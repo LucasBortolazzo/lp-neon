@@ -1,17 +1,15 @@
-.card-depoimento {
+.card-deposition {
   width: 100%;
   max-width: 38.4rem;
   height: 20.9rem;
   background: rgba(241, 240, 245, 0.55);
-  border-radius: 0.9rem;
-  padding: 3.7rem 3.2rem 2.3rem;
-
+  border-radius: 8px;
+  padding: 3.7rem 3.2rem 2rem 3.2rem;
   .user {
     @include flex(row, center, space-between);
     margin-bottom: 2.1rem;
-
     strong {
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 1.8rem;
       line-height: 112%;
@@ -19,12 +17,7 @@
       color: $gray-500;
     }
   }
-
   p {
-    font-size: 1.8rem;
-    line-height: 150%;
     color: $gray-400;
-    width: 100%;
-    max-width: 30.1rem;
   }
 }

@@ -16,12 +16,13 @@ img {
 
 html {
   font-size: 62.5%;
-
   @include responsive(1300px) {
     font-size: 58%;
   }
-
-  @include responsive(768px) {
+  @include responsive(1200px) {
+    font-size: 55%;
+  }
+  @include responsive(991px) {
     font-size: 62.5%;
   }
 }
@@ -29,7 +30,6 @@ html {
 html,
 body {
   overflow-x: hidden;
-  // min-height: 100vh;
 }
 
 button {
