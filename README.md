@@ -10,5 +10,5 @@
 
 
 ## Demo
-Aqui está uma demonstração ao vivo:  https://neon-demo.netlify.app/<br>
+Aqui está uma demonstração ao vivo:  https://neon-demo.netlify.app<br>
 Protótipo(Figma): https://www.figma.com/file/r6ETSlUpdz4g7BkrzcVPOe/Projeto-Web---Banco-Neon-Redesign?node-id=106%3A531
